@@ -1,0 +1,74 @@
+/* Card.css */
+
+.card-container {
+  display: flex;
+  margin: 140px;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.card {
+  width: 300px; /* Adjust width to fit 3 cards per row */
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-bg {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px;
+}
+
+.card-title {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-description {
+  color: white;
+  margin: 8px 0 0 0;
+  font-size: 1rem;
+}
+
+.card--head {
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: -110px;
+  margin-left: 140px;
+  margin-top: 210px;
+}
+
+@media only screen and (max-width: 568px) {
+  .card-container {
+    display: block;
+    margin: 10px;
+    margin-top: 210px;
+    justify-content: center;
+    margin-left: 50px;
+  }
+
+  .card {
+    width: 85%; /* Adjust width to fit 3 cards per row */
+    margin-top: 20px;
+  }
+
+  .card--head {
+    font-size: 2.5rem;
+    margin-bottom: -180px;
+    margin-left: 25px;
+    margin-top: 500px;
+  }
+}
