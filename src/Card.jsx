@@ -1,20 +1,23 @@
 import htmlImg from "../assets/html.png";
+import ZenList from "../assets/Zenlist.jpg";
+import Shopon from "../assets/shopon.jpg";
+import Alphafinance from "../assets/Alphafinance.jpg";
 
 const projects = [
   {
     projectName: "Project 1",
     details: "Details for Project 1",
-    bgImage: htmlImg,
+    bgImage: ZenList,
   },
   {
     projectName: "Project 2",
     details: "Details for Project 2",
-    bgImage: htmlImg,
+    bgImage: Shopon,
   },
   {
     projectName: "Project 3",
     details: "Details for Project 3",
-    bgImage: htmlImg,
+    bgImage: Alphafinance,
   },
   {
     projectName: "Project 4",
