@@ -14,13 +14,13 @@
   text-align: center;
   width: 90px; /* Adjust as needed */
   height: 90px; /* Adjust as needed */
-  border: 1px solid #414040;
+
   border-radius: 8px;
   padding: 20px;
   overflow: hidden; /* Hide overflow to contain absolute positioned elements */
   position: relative; /* Ensure relative positioning for absolute child */
   cursor: pointer;
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   color: whitesmoke;
 
   /* Add animation */
@@ -50,7 +50,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #0000ff; /* Semi-transparent overlay */
+  background-color: #c8f560;
+  color: black;
   opacity: 0; /* Initially invisible */
   transition: opacity 0.3s ease; /* Smooth transition for overlay */
   z-index: 1; /* Above content */

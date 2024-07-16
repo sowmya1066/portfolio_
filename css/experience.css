@@ -26,7 +26,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px #c8f560;
   padding: 3px;
 }
 
@@ -50,7 +50,7 @@
 .company .verticle--line {
   width: 5px; /* Width of the line */
   height: 180px; /* Height of the line */
-  background-color: #f80a0a; /* Color of the line */
+  background-color: #c8f560; /* Color of the line */
   content: "";
   margin-top: 80px;
   margin-left: -35px;

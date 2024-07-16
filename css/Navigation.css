@@ -6,8 +6,8 @@
 
 h1::selection,
 h2::selection {
-  color: #111;
-  background: var(--primary-color);
+  color: #c8f560;
+  background: #c8f560;
 }
 
 /* Buttons */
@@ -21,7 +21,7 @@ h2::selection {
 }
 
 .btn-primary {
-  background: var(--primary-color);
+  background: #c8f560;
   color: #000000;
 }
 
@@ -33,36 +33,7 @@ h2::selection {
 
 /* add hover to resume button */
 .btn-primary:hover {
-  background: var(--secondary-color);
-}
-
-/* Dark mode toggle */
-#switch {
-  display: none;
-}
-
-.toggle-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-
-.toggle-icons > img {
-  transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  width: 30px;
-}
-
-.moon {
-  transform: rotate(10deg);
-}
-
-#switch:checked + .toggle-icons .moon {
-  transform: rotate(250deg);
-}
-
-#switch:checked + .toggle-icons .sun {
-  transform: rotate(100deg);
+  background: #eeeeee;
 }
 
 /* Header Container */
@@ -99,67 +70,6 @@ header {
   max-width: 700px;
 }
 
-/* Project cards */
-.card {
-  padding: 1rem;
-  background: var(--card-background);
-  color: #ffffff;
-  border-radius: 5px;
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-}
-
-.card a {
-  color: #ffffff;
-  transition: 0.25s ease-in-out;
-  font-size: 1.1rem;
-  margin-right: 0.3rem;
-}
-
-.card a:hover {
-  color: var(--primary-color);
-}
-
-.card:hover {
-  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
-}
-
-.card:hover .project-info {
-  opacity: 1;
-}
-
-/* Project Images */
-
-/* project 1 */
-.card:nth-child(1) {
-  background: url(../assets/project/project-one.png) center center/cover;
-}
-
-/* Project 2 */
-.card:nth-child(2) {
-  background: url(../assets/project/project-two.png) center center/cover;
-}
-
-/* Project 3 */
-.card:nth-child(3) {
-  background: url(../assets/project/project-three.png) center center/cover;
-}
-
-/* Project 4 */
-.card:nth-child(4) {
-  background: url(../assets/project/project-four.png) center center/cover;
-}
-
-/* Project 5 */
-.card:nth-child(5) {
-  background: url(../assets/project/project-five.png) center center/cover;
-}
-
-/* Project 6 */
-.card:nth-child(6) {
-  background: url(../assets/project/project-six.png) center center/cover;
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
   .header-container {
@@ -171,12 +81,6 @@ header {
     font-size: 2.5rem;
   }
 }
-
-/* This is the required project styling. Will contain essential CSS styles like:
-   * Flex property
-   * Grid layout
-   * Cards and sections
-*/
 
 /* variables */
 :root {
@@ -268,7 +172,7 @@ body {
   left: 0;
   right: 0;
   z-index: 20;
-  background: var(--bg-primary);
+  background: #eeeeee;
   margin-bottom: 0; /* Adjust margin as needed */
 }
 
@@ -284,7 +188,7 @@ body {
 .navbar .nav-menu {
   display: flex;
   align-items: center;
-  background: var(--bg-primary);
+  background: #eeeeee;
 }
 
 .navbar .nav-link {
@@ -299,7 +203,7 @@ body {
   display: block;
   width: 0;
   height: 4px; /* Adjust thickness of the underline */
-  background-color: var(--primary-color); /* Color of the underline */
+  background-color: #c8f560; /* Color of the underline */
   position: absolute;
   bottom: -6px; /* Increase space between text and underline */
   left: 0;
@@ -337,7 +241,7 @@ body {
   margin: 4px auto;
   transition: all 0.3s ease-in-out;
   border-radius: 30px;
-  background-color: var(--bg-secondary);
+  background-color: #eeeeee;
 }
 
 @media (max-width: 670px) {

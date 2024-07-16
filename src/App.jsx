@@ -7,6 +7,7 @@ import Headline from "../components/Headline.jsx";
 import TabsExample from "../components/Experience.jsx";
 import Card from "../components/Projects.jsx";
 import projects from "../src/Card.jsx";
+import "../css/index.css";
 
 function App() {
   return (

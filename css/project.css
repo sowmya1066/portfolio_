@@ -1,46 +1,65 @@
-/* Card.css */
-
 .card-container {
   display: flex;
   margin: 140px;
   flex-wrap: wrap;
-  justify-content: space-around; /* Adjust as needed */
+  justify-content: space-around;
 }
 
 .card {
   width: 300px; /* Adjust width to fit 3 cards per row */
+  height: 200px; /* Adjust height as needed */
   margin-top: 20px;
   border-radius: 8px;
   overflow: hidden;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box-shadow for card */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for box-shadow and transform */
 }
 
-.card-bg {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjusted box-shadow on hover for elevation effect */
+  transform: translateY(
+    -7px
+  ); /* Optional: Move card slightly upwards on hover */
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  object-position: center; /* Center the image within the container */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for image transform */
+  border-radius: 4px;
+}
+
+.card:hover .card-img {
+  transform: scale(1); /* Scale up the image on hover for a zoom effect */
 }
 
 .card-content {
   position: absolute;
-  bottom: 0;
+  top: 0; /* Position at the top of the card */
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
   padding: 16px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.card-title {
+.card:hover .card-content {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.card-title,
+.card-description {
   color: white;
   margin: 0;
   font-size: 1.5rem;
-}
-
-.card-description {
-  color: white;
-  margin: 8px 0 0 0;
-  font-size: 1rem;
 }
 
 .card--head {
@@ -50,12 +69,11 @@
   margin-left: 140px;
   margin-top: 210px;
 }
-
 @media only screen and (max-width: 568px) {
   .card-container {
     display: block;
     margin: 10px;
-    margin-top: 210px;
+    margin-top: 310px;
     justify-content: center;
     margin-left: 50px;
   }
@@ -66,9 +84,8 @@
   }
 
   .card--head {
-    font-size: 2.5rem;
-    margin-bottom: -180px;
-    margin-left: 25px;
-    margin-top: 500px;
+    margin-bottom: -290px;
+    margin-left: 40px;
+    margin-top: 480px;
   }
 }
