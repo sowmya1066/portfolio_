@@ -12,7 +12,7 @@ const Experience = () => {
           <div className="verticle--line"></div>
           <div className="company-details">
             <h3>Indegene</h3>
-            <p>Junior Software Engineer</p>
+            <p className="company-details-p">Junior Software Engineer</p>
             <p className="tab-dates">AUG 16, 2022 - JUL 28, 2023</p>
             <p className="tab-paragraph">
               At Winrealty, I was tasked to manage and develop a responsive and
@@ -31,7 +31,7 @@ const Experience = () => {
           <div className="verticle--line"></div>
           <div className="company-details">
             <h3>Cognizant</h3>
-            <p>Program Analyst Trainee</p>
+            <p className="company-details-p">Program Analyst Trainee</p>
             <p className="tab-dates">OCT 11, 2022 - JAN 16, 2023</p>
             <p className="tab-paragraph">
               At Agpro Inc, I worked closely with a team to rebrand and build

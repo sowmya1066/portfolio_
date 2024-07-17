@@ -26,6 +26,7 @@ h2::selection {
 }
 
 .btn-secondary {
+  text-transform: none;
   margin: 5px 0;
   background-color: var(--bg-secondary);
   color: var(--bg-primary);
@@ -33,9 +34,15 @@ h2::selection {
 
 /* add hover to resume button */
 .btn-primary:hover {
-  background: #eeeeee;
+  background: #111111;
+  color: #eeeeee;
 }
 
+.btn-secondary:hover {
+  background: #c8f560;
+  color: #111111;
+  font-weight: 500;
+}
 /* Header Container */
 header {
   margin-top: -3rem; /* Adjust margin-top to reduce space */
@@ -149,11 +156,11 @@ body {
 }
 
 .profile-image {
+  height: 180px;
   width: 150px;
   border-radius: 50%;
   animation: bounce 1s infinite alternate;
 }
-
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -287,6 +294,7 @@ body {
     display: block;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
+    background-color: #111111;
   }
 
   .hamburger.active {

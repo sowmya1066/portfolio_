@@ -35,17 +35,17 @@ const Navigation = () => {
           <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
             <li>
               <a className="nav-link" href="#projects" onClick={closeMenu}>
-                PROJECTS
+                Experience
               </a>
             </li>
             <li>
               <a className="nav-link" href="#" onClick={closeMenu}>
-                CONTACT
+                Projects
               </a>
             </li>
             <li>
               <a className="nav-link" href="#" onClick={closeMenu}>
-                BLOG
+                Connect
               </a>
             </li>
             <li>
@@ -81,7 +81,7 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Connect With Me
+            Let's Connect
           </a>
         </section>
       </header>

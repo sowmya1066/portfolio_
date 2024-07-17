@@ -34,16 +34,23 @@
   margin-left: 60px;
   margin-bottom: 30px;
 }
-
+.company-details h3 {
+  color: #292929;
+}
+.company-details-p {
+  color: #6666668d;
+  font-weight: 550;
+}
 .tab-dates {
   font-size: 0.9rem;
-  color: #666;
+  color: #404040;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .tab-paragraph {
   font-size: 1rem;
-  color: #444;
+  color: #666;
   line-height: 1.6;
 }
 
@@ -75,7 +82,7 @@
   .company .verticle--line {
     width: 10px; /* Width of the line */
     height: 310px; /* Height of the line */
-    background-color: #f80a0a; /* Color of the line */
+    background-color: #c8f560; /* Color of the line */
     content: "";
     margin-top: 8px;
     margin-left: -35px;

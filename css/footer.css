@@ -1,0 +1,44 @@
+.footer {
+  background-color: rgb(27, 27, 27);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer__links {
+  margin-bottom: 10px;
+}
+
+.footer__links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+.footer__text {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 568px) {
+  .skill_head {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-top: 40px;
+  }
+
+  .footer__links a {
+    margin: 5px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}

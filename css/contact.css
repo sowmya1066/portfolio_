@@ -1,0 +1,69 @@
+.contact--me {
+  text-align: center; /* Center align the entire list */
+}
+
+.contact--me ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+}
+
+.contact--me ul li {
+  display: inline-block;
+  margin-right: 35px; /* Adjust margin for spacing between items */
+  vertical-align: middle; /* Align items vertically */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+
+.contact--me ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.contact--me ul li a {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.contact--me ul li a img {
+  width: 55px; /* Increased size for the image */
+  height: 55px; /* Increased size for the image */
+  border-radius: 50%; /* Makes the image circular */
+  background-color: rgba(0, 0, 0, 0.094); /* Background color for the circle */
+  padding: 10px; /* Increased padding inside the circle */
+}
+
+.contact--me ul li:hover {
+  transform: translateY(-5px); /* Move up by -5px on hover */
+}
+
+.contact--me ul li:hover a img {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
+.contact--me--head {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: rgba(16, 16, 16, 0.84);
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 568px) {
+  .contact--me--head {
+    margin-left: 15px;
+  }
+
+  .contact--me ul li {
+    margin-right: 10px; /* Adjust margin for spacing between items */
+  }
+
+  .contact--me ul {
+    margin-left: 15px;
+  }
+
+  .contact--me ul li a img {
+    width: 50px; /* Increased size for the image */
+    height: 50px; /* Increased size for the image */
+    padding: 10px; /* Increased padding inside the circle */
+  }
+}

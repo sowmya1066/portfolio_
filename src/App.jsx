@@ -7,6 +7,8 @@ import Headline from "../components/Headline.jsx";
 import TabsExample from "../components/Experience.jsx";
 import Card from "../components/Projects.jsx";
 import projects from "../src/Card.jsx";
+import Contact from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
 import "../css/index.css";
 
 function App() {
@@ -53,7 +55,7 @@ function App() {
       <Headline title="Experience" />
       <TabsExample />
 
-      <h2 className="card--head">Projects</h2>
+      <h2 className="card--head">I've built..</h2>
       <div className="card-container">
         {projects.map((project, index) => (
           <Card
@@ -64,6 +66,8 @@ function App() {
           />
         ))}
       </div>
+      <Contact />
+      <Footer />
     </>
   );
 }
