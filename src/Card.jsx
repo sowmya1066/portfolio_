@@ -5,19 +5,19 @@ import Alphafinance from "../assets/Alphafinance.jpg";
 
 const projects = [
   {
-    projectName: "Project 1",
-    details: "Details for Project 1",
+    projectName: "Alpha Finanace",
+    details: "HTML, CSS, JS",
+    bgImage: Alphafinance,
+  },
+  {
+    projectName: "ZenList",
+    details: "JavaScript",
     bgImage: ZenList,
   },
   {
-    projectName: "Project 2",
-    details: "Details for Project 2",
+    projectName: "Shopon",
+    details: "React, Redux",
     bgImage: Shopon,
-  },
-  {
-    projectName: "Project 3",
-    details: "Details for Project 3",
-    bgImage: Alphafinance,
   },
   {
     projectName: "Project 4",

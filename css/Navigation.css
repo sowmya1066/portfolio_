@@ -200,7 +200,7 @@ body {
 
 .navbar .nav-link {
   margin: 0 1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: var(--weight-semibold);
   position: relative; /* Ensure positioning context for pseudo-element */
 }
