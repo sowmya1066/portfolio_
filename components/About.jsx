@@ -1,9 +1,94 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../css/about.css";
 
 export default function About() {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("about-section-visible");
+          } else {
+            entry.target.classList.remove("about-section-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+      }
+    );
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("about-head-visible");
+          } else {
+            entry.target.classList.remove("about-head-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+      }
+    );
+
+    const aboutHeadRef = document.querySelector(".about_head");
+    if (aboutHeadRef) {
+      observer.observe(aboutHeadRef);
+    }
+
+    return () => {
+      if (aboutHeadRef) {
+        observer.unobserve(aboutHeadRef);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("portfolio-content-visible");
+          } else {
+            entry.target.classList.remove("portfolio-content-visible");
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the section is visible
+      }
+    );
+
+    const portfolioContentRef = document.querySelector(".portfolio-content");
+    if (portfolioContentRef) {
+      observer.observe(portfolioContentRef);
+    }
+
+    return () => {
+      if (portfolioContentRef) {
+        observer.unobserve(portfolioContentRef);
+      }
+    };
+  }, []);
+
   return (
-    <div>
+    <div className="about-section" ref={aboutRef}>
       <h2 className="about_head">Who am I?</h2>
       <div className="portfolio-section">
         <div className="container1">
