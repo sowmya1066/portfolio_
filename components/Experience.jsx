@@ -1,13 +1,52 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import indegeneLogo from "../assets/indegene.jpeg";
 import cognizantLogo from "../assets/cognizant.jpeg";
-import "../css/experience.css"; // Assuming your CSS file is imported here
+import "../css/experience.css";
 
 const Experience = () => {
+  const companyRefs = useRef([]);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("company-details-visible");
+          entry.target
+            .querySelector(".verticle--line")
+            .classList.add("verticle--line-visible");
+          entry.target
+            .querySelector(".company-details")
+            .classList.add("company-details-visible");
+        } else {
+          entry.target.classList.remove("company-details-visible");
+          entry.target
+            .querySelector(".verticle--line")
+            .classList.remove("verticle--line-visible");
+          entry.target
+            .querySelector(".company-details")
+            .classList.remove("company-details-visible");
+        }
+      });
+    }, observerOptions);
+
+    companyRefs.current.forEach((ref) => {
+      observer.observe(ref);
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div className="exp--container">
       <div className="company-section">
-        <div className="company">
+        <div ref={(el) => companyRefs.current.push(el)} className="company">
           <img src={indegeneLogo} alt="Indegene" />
           <div className="verticle--line"></div>
           <div className="company-details">
@@ -17,16 +56,14 @@ const Experience = () => {
             <p className="tab-paragraph">
               At Winrealty, I was tasked to manage and develop a responsive and
               performant frontend application that reshapes the way countless
-              users purchase property in Nigeria.
-            </p>
-            <p className="tab-paragraph">
-              At Winrealty, I was tasked to manage and develop a responsive and
-              performant frontend application that reshapes the way countless
-              users purchase property in Nigeria.
+              users purchase property in Nigeria. At Winrealty, I was tasked to
+              manage and develop a responsive and performant frontend
+              application that reshapes the way countless users purchase
+              property in Nigeria.
             </p>
           </div>
         </div>
-        <div className="company">
+        <div ref={(el) => companyRefs.current.push(el)} className="company">
           <img src={cognizantLogo} alt="Cognizant" />
           <div className="verticle--line"></div>
           <div className="company-details">
@@ -37,12 +74,9 @@ const Experience = () => {
               At Agpro Inc, I worked closely with a team to rebrand and build
               the frontend infrastructure of Agpro's Angular-based service web
               app that allows thousands of clients across the USA monitor their
-              barn activity.
-            </p>
-            <p className="tab-paragraph">
-              At Winrealty, I was tasked to manage and develop a responsive and
-              performant frontend application that reshapes the way countless
-              users purchase property in Nigeria.
+              barn activity. At Winrealty, I was tasked to manage and develop a
+              responsive and performant frontend application that reshapes the
+              way countless users purchase property in Nigeria.
             </p>
           </div>
         </div>

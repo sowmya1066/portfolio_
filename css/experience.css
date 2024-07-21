@@ -1,3 +1,5 @@
+/* experience.css */
+
 .exp--container {
   display: flex;
   justify-content: start;
@@ -8,21 +10,25 @@
 }
 
 .company-section {
-  display: block;
-  margin-top: 170px;
+  display: flex;
+  flex-direction: column; /* Ensure each company is stacked vertically */
   width: 60%;
+  margin-top: 170px;
 }
 
 .company {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .company img {
-  margin-top: -210px;
   width: 60px;
   height: auto;
+  margin-right: 10px;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -31,16 +37,22 @@
 }
 
 .company-details {
-  margin-left: 60px;
-  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  margin-left: 45px;
+  margin-top: 15px;
 }
+
 .company-details h3 {
   color: #292929;
 }
+
 .company-details-p {
   color: #6666668d;
   font-weight: 550;
 }
+
 .tab-dates {
   font-size: 0.9rem;
   color: #404040;
@@ -54,13 +66,25 @@
   line-height: 1.6;
 }
 
-.company .verticle--line {
-  width: 5px; /* Width of the line */
-  height: 180px; /* Height of the line */
-  background-color: #c8f560; /* Color of the line */
-  content: "";
+.verticle--line {
+  width: 12px;
+  height: 180px;
+  background-color: #c8f560;
   margin-top: 80px;
   margin-left: -35px;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.company-details-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.verticle--line-visible {
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 @media only screen and (max-width: 568px) {
@@ -70,8 +94,8 @@
   }
 
   .company-section {
-    margin-top: 170px;
     width: 90%;
+    margin-top: 170px;
   }
 
   .company img {
@@ -79,12 +103,9 @@
     margin-left: -10px;
   }
 
-  .company .verticle--line {
-    width: 10px; /* Width of the line */
-    height: 310px; /* Height of the line */
-    background-color: #c8f560; /* Color of the line */
-    content: "";
+  .verticle--line {
+    width: 10px;
+    height: 310px;
     margin-top: 8px;
-    margin-left: -35px;
   }
 }
