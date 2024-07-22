@@ -5,11 +5,17 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__links">
-        <a href="#about">About</a>
-        <a href="#education">Experience</a>
-        <a href="#resume">Resume</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects" className="footer--p">
+        <a href="#aboutId">About</a>
+        <a href="#exp">Experience</a>
+        <a
+          href="https://github.com/sowmya1066/portfoliov2/blob/master/Sowmya_resume.pdf"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Resume
+        </a>
+        <a href="#skillsId">Skills</a>
+        <a href="#cardId" className="footer--p">
           Projects
         </a>
       </div>

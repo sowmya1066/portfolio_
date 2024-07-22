@@ -34,25 +34,27 @@ const Navigation = () => {
           {/* Navbar links */}
           <ul className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
             <li>
-              <a className="nav-link" href="#projects" onClick={closeMenu}>
-                Experience
+              <a className="nav-link" href="#aboutId" onClick={closeMenu}>
+                About
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#" onClick={closeMenu}>
+              <a className="nav-link" href="#cardId" onClick={closeMenu}>
                 Projects
               </a>
             </li>
             <li>
-              <a className="nav-link" href="#" onClick={closeMenu}>
-                Connect
+              <a className="nav-link" href="#contactId" onClick={closeMenu}>
+                Contact
               </a>
             </li>
             <li>
               <a
                 className="nav-link btn btn-primary"
-                href="https://github.com/CommunityPro/portfolio-html"
+                href="https://github.com/sowmya1066/portfoliov2/blob/master/Sowmya_resume.pdf"
                 onClick={closeMenu}
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 RESUME <i className="fas fa-arrow-right"></i>
               </a>
@@ -76,7 +78,7 @@ const Navigation = () => {
             </p>
           </div>
           <a
-            href="https://github.com/CommunityPro/portfolio-html"
+            href="https://www.linkedin.com/in/sowmya-g-s-060b95210"
             className="btn btn-secondary"
             target="_blank"
             rel="noopener noreferrer"
@@ -85,8 +87,6 @@ const Navigation = () => {
           </a>
         </section>
       </header>
-
-      {/* JavaScript Import (if needed) */}
     </div>
   );
 };

@@ -14,7 +14,6 @@
   text-align: center;
   width: 90px; /* Adjust as needed */
   height: 90px; /* Adjust as needed */
-
   border-radius: 8px;
   padding: 20px;
   overflow: hidden; /* Hide overflow to contain absolute positioned elements */
@@ -22,9 +21,15 @@
   cursor: pointer;
   background-color: rgb(27, 27, 27);
   color: whitesmoke;
-
-  /* Add animation */
-  animation: rotate 6s infinite linear; /* Adjust duration (6s) and timing function as needed */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  z-index: 1;
+}
+.skills.animate {
+  /* Animation styles when it comes into view */
+  opacity: 1;
+  transform: translateY(0);
 }
 @keyframes rotate {
   from {
@@ -38,10 +43,6 @@
 .skills:hover {
   animation-play-state: paused; /* Pause animation on hover */
 }
-/* .skills:hover {
-  transform: scale(1.05); 
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
-} */
 
 .skills::before {
   content: "";
@@ -54,7 +55,7 @@
   color: black;
   opacity: 0; /* Initially invisible */
   transition: opacity 0.3s ease; /* Smooth transition for overlay */
-  z-index: 1; /* Above content */
+  z-index: -1; /* Above content */
 }
 
 .skills:hover::before {
@@ -67,6 +68,8 @@
   object-fit: contain;
   margin-bottom: 10px; /* Space between image and text */
   z-index: 2; /* Above overlay */
+  transform: scale(0.8);
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
 }
 
 .skills p {

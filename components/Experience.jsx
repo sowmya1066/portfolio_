@@ -44,7 +44,7 @@ const Experience = () => {
   }, []);
 
   return (
-    <div className="exp--container">
+    <div className="exp--container" id="exp">
       <div className="company-section">
         <div ref={(el) => companyRefs.current.push(el)} className="company">
           <img src={indegeneLogo} alt="Indegene" />

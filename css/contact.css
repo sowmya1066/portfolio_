@@ -1,11 +1,17 @@
 .contact--me {
   text-align: center; /* Center align the entire list */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
-
+.contact--me.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 .contact--me ul {
   list-style-type: none;
   padding: 0;
-  margin: 0; /* Remove default margin */
+  margin: 0;
 }
 
 .contact--me ul li {

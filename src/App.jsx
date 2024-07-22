@@ -16,7 +16,7 @@ function App() {
     <>
       <Navigation />
       <About />
-      <div>
+      <div id="skillsId">
         <Headline title="My Skills" />
         <div className="skills-container" id="d--none">
           <Skills img={SKILLS_CORE[0].image} title={SKILLS_CORE[0].title} />
@@ -55,7 +55,9 @@ function App() {
       <Headline title="Experience" />
       <TabsExample />
 
-      <h2 className="card--head">I've built..</h2>
+      <h2 className="card--head" id="cardId">
+        I've built..
+      </h2>
       <div className="card-container">
         {projects.map((project, index) => (
           <Card
