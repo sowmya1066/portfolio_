@@ -94,4 +94,12 @@
     margin-left: 40px;
     margin-top: 480px;
   }
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    object-position: center; /* Center the image within the container */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for image transform */
+    border-radius: 4px;
+  }
 }

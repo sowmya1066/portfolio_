@@ -99,13 +99,13 @@
   }
 
   .company img {
-    margin-top: -410px;
+    margin-top: 10px;
     margin-left: -10px;
   }
 
   .verticle--line {
     width: 10px;
     height: 310px;
-    margin-top: 8px;
+    margin-top: 95px;
   }
 }
