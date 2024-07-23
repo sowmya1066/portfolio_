@@ -17,6 +17,12 @@ const projects = [
     bgImage: NextFood,
   },
   {
+    projectName: "ZenList",
+    details: "JavaScript",
+    bgImage: ZenList,
+  },
+
+  {
     projectName: "Project 5",
     details: "Details for Project 3",
     bgImage: Wheeltrek,
@@ -25,11 +31,6 @@ const projects = [
     projectName: "Alpha Finanace",
     details: "HTML, CSS, JS",
     bgImage: Alphafinance,
-  },
-  {
-    projectName: "ZenList",
-    details: "JavaScript",
-    bgImage: ZenList,
   },
 
   {
