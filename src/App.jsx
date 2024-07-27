@@ -65,6 +65,7 @@ function App() {
             projectName={project.projectName}
             details={project.details}
             bgImage={project.bgImage}
+            link={project.link}
           />
         ))}
       </div>

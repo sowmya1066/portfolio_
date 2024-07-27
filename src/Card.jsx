@@ -10,33 +10,37 @@ const projects = [
     projectName: "Shopon",
     details: "React, Redux",
     bgImage: Shopon,
+    link: "https://example.com/shopon",
   },
   {
     projectName: "Project 4",
-    details: "Details for Project 3",
+    details: "Details for Project 4",
     bgImage: NextFood,
+    link: "https://example.com/project4",
   },
   {
     projectName: "ZenList",
     details: "JavaScript",
     bgImage: ZenList,
+    link: "https://example.com/zenlist",
   },
-
   {
-    projectName: "Project 5",
-    details: "Details for Project 3",
+    projectName: "Wheel Trek",
+    details: "JavaScript",
     bgImage: Wheeltrek,
+    link: "https://wheeltrek-sowmya.netlify.app/",
   },
   {
     projectName: "Alpha Finanace",
     details: "HTML, CSS, JS",
     bgImage: Alphafinance,
+    link: "https://alpha-finance-sowmya.netlify.app/",
   },
-
   {
     projectName: "Project 6",
-    details: "Details for Project 3",
+    details: "Details for Project 6",
     bgImage: htmlImg,
+    link: "https://example.com/project6",
   },
 ];
 
