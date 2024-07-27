@@ -73,8 +73,9 @@ const Navigation = () => {
 
             <h2>A passionate Frontend Developer</h2>
             <p>
-              A Frontend Developer and Visual Designer with experience in web
-              design, brand identity and product design.
+              A strong background in web design, visual identity, and product
+              design. Passionate about creating engaging user experiences and
+              innovative digital solutions.
             </p>
           </div>
           <a

@@ -52,14 +52,14 @@ const Experience = () => {
           <div className="company-details">
             <h3>Indegene</h3>
             <p className="company-details-p">Junior Software Engineer</p>
-            <p className="tab-dates">AUG 16, 2022 - JUL 28, 2023</p>
+            <p className="tab-dates">July 2022 - Present</p>
             <p className="tab-paragraph">
-              At Winrealty, I was tasked to manage and develop a responsive and
-              performant frontend application that reshapes the way countless
-              users purchase property in Nigeria. At Winrealty, I was tasked to
-              manage and develop a responsive and performant frontend
-              application that reshapes the way countless users purchase
-              property in Nigeria.
+              Developed dynamic web pages for BI.com, ensuring a optimal user
+              experience. Contributed to the Career Website Development project,
+              collaborating on the Page-As-A-Service (PaaS) feature for
+              efficient page creation. Enhanced functionality by integrating
+              Taleo API with SuccessFactors and supporting job posting and
+              candidate synchronization.
             </p>
           </div>
         </div>
@@ -69,14 +69,14 @@ const Experience = () => {
           <div className="company-details">
             <h3>Cognizant</h3>
             <p className="company-details-p">Program Analyst Trainee</p>
-            <p className="tab-dates">OCT 11, 2022 - JAN 16, 2023</p>
+            <p className="tab-dates">January 2022 - June 2022</p>
             <p className="tab-paragraph">
-              At Agpro Inc, I worked closely with a team to rebrand and build
-              the frontend infrastructure of Agpro's Angular-based service web
-              app that allows thousands of clients across the USA monitor their
-              barn activity. At Winrealty, I was tasked to manage and develop a
-              responsive and performant frontend application that reshapes the
-              way countless users purchase property in Nigeria.
+              Utilized advanced state management techniques to efficiently
+              manage and update application state, enhancing overall
+              performance. Streamlined data handling within React components to
+              ensure smoother interactions and responsiveness. Applied best
+              practices for managing complex application states, ensuring
+              scalability and maintainability in React applications.
             </p>
           </div>
         </div>

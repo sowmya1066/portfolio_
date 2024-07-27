@@ -7,22 +7,16 @@ import Wheeltrek from "../assets/wheeltrek.png";
 
 const projects = [
   {
-    projectName: "Shopon",
-    details: "React, Redux",
-    bgImage: Shopon,
-    link: "https://example.com/shopon",
-  },
-  {
-    projectName: "Project 4",
-    details: "Details for Project 4",
+    projectName: "Next Food",
+    details: "NextJS",
     bgImage: NextFood,
-    link: "https://example.com/project4",
+    link: "https://next-food-iota.vercel.app/meals",
   },
   {
     projectName: "ZenList",
     details: "JavaScript",
     bgImage: ZenList,
-    link: "https://example.com/zenlist",
+    link: "https://zen-list.vercel.app/",
   },
   {
     projectName: "Wheel Trek",
@@ -35,6 +29,12 @@ const projects = [
     details: "HTML, CSS, JS",
     bgImage: Alphafinance,
     link: "https://alpha-finance-sowmya.netlify.app/",
+  },
+  {
+    projectName: "Shopon",
+    details: "ReactJS",
+    bgImage: Shopon,
+    link: "https://shopon-green.vercel.app/",
   },
   {
     projectName: "Project 6",

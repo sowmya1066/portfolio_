@@ -31,7 +31,7 @@ const Contact = () => {
       <h1 className="contact--me--head">Let's connect</h1>
       <ul className="contact-icons">
         <li>
-          <a href="#">
+          <a href="mailto:sowmyaa2406@gmail.com">
             <img src={EMailIcon} alt="Email Icon" />
           </a>
         </li>

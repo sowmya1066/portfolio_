@@ -15,7 +15,7 @@ import "ldrs/hourglass"; // Import the CSS for ldrs if needed
 // Define a Loader component using ldrs
 const Loader = () => (
   <div className="loader-container">
-    <l-hourglass size="80" stroke="3" speed="1" color="#9fcf2e"></l-hourglass>
+    <l-hourglass size="65" stroke="3" speed="1" color="#9fcf2e"></l-hourglass>
   </div>
 );
 
