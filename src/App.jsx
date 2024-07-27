@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "../components/Navigation";
 import About from "../components/About.jsx";
 import Skills from "../components/Skills.jsx";
@@ -10,10 +10,44 @@ import projects from "../src/Card.jsx";
 import Contact from "../components/Contact.jsx";
 import Footer from "../components/Footer.jsx";
 import "../css/index.css";
+import "ldrs/hourglass"; // Import the CSS for ldrs if needed
+
+// Define a Loader component using ldrs
+const Loader = () => (
+  <div className="loader-container">
+    <l-hourglass size="80" stroke="3" speed="1" color="#9fcf2e"></l-hourglass>
+  </div>
+);
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Set a timeout for 3 seconds to simulate loading
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    // Clean up the timer if the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Inline style for background color based on loading state
+  const appStyle = {
+    backgroundColor: loading ? "rgb(27, 27, 27)" : "#eeeeee", // Set desired colors
+    minHeight: "100vh", // Ensure it covers the full viewport height
+  };
+
+  if (loading) {
+    return (
+      <div style={appStyle}>
+        <Loader />
+      </div>
+    );
+  }
+
   return (
-    <>
+    <div style={appStyle}>
       <Navigation />
       <About />
       <div id="skillsId">
@@ -69,9 +103,10 @@ function App() {
           />
         ))}
       </div>
+
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
