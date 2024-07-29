@@ -10,7 +10,7 @@ import projects from "../src/Card.jsx";
 import Contact from "../components/Contact.jsx";
 import Footer from "../components/Footer.jsx";
 import "../css/index.css";
-import "ldrs/hourglass"; // Import the CSS for ldrs if needed
+import "ldrs/hourglass";
 
 // Define a Loader component using ldrs
 const Loader = () => (
@@ -51,7 +51,7 @@ function App() {
       <Navigation />
       <About />
       <div id="skillsId">
-        <Headline title="My Skills" />
+        <Headline title="Things I know" />
         <div className="skills-container" id="d--none">
           <Skills img={SKILLS_CORE[0].image} title={SKILLS_CORE[0].title} />
           <Skills img={SKILLS_CORE[1].image} title={SKILLS_CORE[1].title} />
