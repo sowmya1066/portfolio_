@@ -32,7 +32,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 5px;
-  box-shadow: 0 2px 4px #c8f560;
+  box-shadow: 0 2px 4px #292929;
   padding: 3px;
 }
 
@@ -69,7 +69,7 @@
 .verticle--line {
   width: 12px;
   height: 180px;
-  background-color: #c8f560;
+  background-color: #292929;
   margin-top: 80px;
   margin-left: -35px;
   opacity: 0;
