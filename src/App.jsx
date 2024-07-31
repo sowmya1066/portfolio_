@@ -19,7 +19,7 @@ function App() {
     // Set a timeout for 2 seconds to simulate loading
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000); // Adjust as needed
+    }, 2000); // Adjust as needed
 
     // Clean up the timer if the component unmounts
     return () => clearTimeout(timer);
