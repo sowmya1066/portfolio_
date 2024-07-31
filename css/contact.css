@@ -35,7 +35,7 @@
   width: 55px; /* Increased size for the image */
   height: 55px; /* Increased size for the image */
   border-radius: 50%; /* Makes the image circular */
-  background-color: rgba(0, 0, 0, 0.094); /* Background color for the circle */
+  background-color: rgba(0, 0, 0, 0.048); /* Background color for the circle */
   padding: 10px; /* Increased padding inside the circle */
 }
 

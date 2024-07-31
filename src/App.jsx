@@ -10,23 +10,16 @@ import projects from "../src/Card.jsx";
 import Contact from "../components/Contact.jsx";
 import Footer from "../components/Footer.jsx";
 import "../css/index.css";
-import "ldrs/hourglass";
-
-// Define a Loader component using ldrs
-const Loader = () => (
-  <div className="loader-container">
-    <l-hourglass size="65" stroke="3" speed="1" color="#9fcf2e"></l-hourglass>
-  </div>
-);
+import Spinner from "../components/Spinner.jsx"; // Import the custom spinner
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Set a timeout for 3 seconds to simulate loading
+    // Set a timeout for 2 seconds to simulate loading
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000); // Adjust as needed
 
     // Clean up the timer if the component unmounts
     return () => clearTimeout(timer);
@@ -34,20 +27,24 @@ function App() {
 
   // Inline style for background color based on loading state
   const appStyle = {
-    backgroundColor: loading ? "rgb(27, 27, 27)" : "#eeeeee", // Set desired colors
-    minHeight: "100vh", // Ensure it covers the full viewport height
+    backgroundColor: loading ? "rgb(27, 27, 27)" : "#eeeeee",
+    minHeight: "100vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    transition: "filter 3s ease-in-out",
   };
 
   if (loading) {
     return (
       <div style={appStyle}>
-        <Loader />
+        <Spinner />
       </div>
     );
   }
 
   return (
-    <div style={appStyle}>
+    <div>
       <Navigation />
       <About />
       <div id="skillsId">
