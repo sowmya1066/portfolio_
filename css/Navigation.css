@@ -147,14 +147,6 @@ a {
   color: var(--text-color);
 }
 
-/* Main styling */
-body {
-  background: var(--bg-primary);
-  color: var(--text-color);
-  font-family: "Raleway", sans-serif;
-  line-height: 1.5;
-}
-
 .profile-image {
   height: 180px;
   width: 150px;
@@ -180,7 +172,7 @@ body {
   right: 0;
   z-index: 20;
   background: #eeeeee;
-  margin-bottom: 0; /* Adjust margin as needed */
+  margin-bottom: 0;
 }
 
 .navbar .container {
@@ -202,7 +194,7 @@ body {
   margin: 0 1rem;
   font-size: 0.9rem;
   font-weight: var(--weight-semibold);
-  position: relative; /* Ensure positioning context for pseudo-element */
+  position: relative;
 }
 
 .navbar .nav-link:not(.btn-primary)::after {
@@ -230,11 +222,6 @@ body {
   margin-right: 1.5rem;
 }
 
-.fas.fa-arrow-right {
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
-}
-
 /* hamburger */
 .hamburger {
   margin-bottom: 0.1rem;
@@ -248,7 +235,7 @@ body {
   margin: 4px auto;
   transition: all 0.3s ease-in-out;
   border-radius: 30px;
-  background-color: #eeeeee;
+  background-color: rgb(27, 27, 27);
 }
 
 @media (max-width: 670px) {
@@ -263,6 +250,7 @@ body {
     padding: 2rem;
     border-radius: 5px;
     align-items: flex-start;
+    background-color: #222222;
   }
 
   .navbar .btn {
@@ -277,6 +265,7 @@ body {
   .nav-menu .nav-link {
     font-size: 0.9rem;
     margin: 0 0.2rem;
+    color: #f4f4f4;
   }
 
   .nav-menu li {
@@ -294,7 +283,7 @@ body {
     display: block;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
-    background-color: #111111;
+    background-color: #eeeeee;
   }
 
   .hamburger.active {
