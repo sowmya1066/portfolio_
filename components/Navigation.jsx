@@ -51,7 +51,7 @@ const Navigation = () => {
             <li>
               <a
                 className="nav-link btn btn-primary"
-                href="https://github.com/sowmya1066/portfoliov2/blob/master/Sowmya_resume.pdf"
+                href="https://github.com/sowmya1066/portfolio_/blob/master/Sowmya%20GS.pdf"
                 onClick={closeMenu}
                 rel="noopener noreferrer"
                 target="_blank"
